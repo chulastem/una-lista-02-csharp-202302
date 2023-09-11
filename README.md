@@ -11,22 +11,22 @@ informados.
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		double n1, n2, media;
-		
-		Console.WriteLine("Digite o primeiro nº: ");
-		n1 = Convert.ToDouble(Console.ReadLine()); 
-		Console.WriteLine("Digite o segundo nº: ");
-		n2 = Convert.ToDouble(Console.ReadLine()); 
-		
-		media = (n1+n2)/2;
-		
-		Console.WriteLine("A media aritmetica dos números digitados é " + media);
-	}
+ public static void Main()
+ {
+  double n1, n2, media;
+  
+  Console.WriteLine("Digite o primeiro nº: ");
+  n1 = Convert.ToDouble(Console.ReadLine()); 
+  Console.WriteLine("Digite o segundo nº: ");
+  n2 = Convert.ToDouble(Console.ReadLine()); 
+  
+  media = (n1+n2)/2;
+  
+  Console.WriteLine("A media aritmetica dos números digitados é " + media);
+ }
 }
 ```
 
@@ -38,18 +38,18 @@ Novo valor do produto: 55.00
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		double produto, produto10;
-		
-		Console.WriteLine("Digite o valor do produto: ");
-		produto = Convert.ToDouble(Console.ReadLine());
-		produto10 = produto*0.10;
-		Console.WriteLine("Novo valor do produto: "+ (produto10 + produto));
-	}
+ public static void Main()
+ {
+  double produto, produto10;
+  
+  Console.WriteLine("Digite o valor do produto: ");
+  produto = Convert.ToDouble(Console.ReadLine());
+  produto10 = produto*0.10;
+  Console.WriteLine("Novo valor do produto: "+ (produto10 + produto));
+ }
 }
 ```
 
@@ -60,17 +60,17 @@ OBS.: °C = (°F − 32) / 1,8
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		double f, c;
-		Console.WriteLine("Digite a teputeratura em F°: ");
-		f = Convert.ToDouble(Console.ReadLine());
-		c = (f - 32)/ 1.8;
-		Console.WriteLine("Temperatura em C°: "+ c);
-	}
+ public static void Main()
+ {
+  double f, c;
+  Console.WriteLine("Digite a teputeratura em F°: ");
+  f = Convert.ToDouble(Console.ReadLine());
+  c = (f - 32)/ 1.8;
+  Console.WriteLine("Temperatura em C°: "+ c);
+ }
 }
 ```
 
@@ -84,12 +84,12 @@ aplicado, i é a taxa de juros e n é o prazo da aplicação.
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		Console.WriteLine("Digite o valor do capital a ser aplicado: ");
+ public static void Main()
+ {
+  Console.WriteLine("Digite o valor do capital a ser aplicado: ");
         double capital = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("Digite o prazo de aplicação em meses: ");
@@ -101,7 +101,7 @@ public class Program
         double montante = capital * Math.Pow(1 + taxaJurosMensal, prazoMeses);
 
         Console.WriteLine("O montante a ser recebido é: " + montante.ToString("F2"));
-	}
+ }
 }
 ```
 
@@ -116,31 +116,31 @@ família.
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-				// a. Número de horas que o funcionário trabalhou no mês.
-				Console.WriteLine("Informe o número de horas trabalhadas no mês: ");
+ public static void Main()
+ {
+    // a. Número de horas que o funcionário trabalhou no mês.
+    Console.WriteLine("Informe o número de horas trabalhadas no mês: ");
         int horasTrabalhadas = Convert.ToInt32(Console.ReadLine());
 
-				// b. Valor recebido por hora de trabalho.
+    // b. Valor recebido por hora de trabalho.
         Console.WriteLine("Informe o valor recebido por hora de trabalho: ");
         double valorPorHora = Convert.ToDouble(Console.ReadLine());
 
-				// c. Valor do salário família.
+    // c. Valor do salário família.
         Console.WriteLine("Informe o valor do salário família: ");
         double salarioFamilia = Convert.ToDouble(Console.ReadLine());
-		
-				// d. Número de filhos com idade menor que 14 anos
+  
+    // d. Número de filhos com idade menor que 14 anos
         Console.WriteLine("Informe o número de filhos com idade menor que 14 anos: ");
         int numeroFilhos = Convert.ToInt32(Console.ReadLine());
 
         double salarioBruto = horasTrabalhadas * valorPorHora + salarioFamilia * numeroFilhos;
 
         Console.WriteLine("O salário bruto a ser recebido é: " + salarioBruto.ToString("F2"));
-	}
+ }
 }
 ```
 
@@ -150,12 +150,12 @@ representada pelo segundo número.
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-		{
-				Console.WriteLine("Digite o número para o qual deseja calcular o logaritmo: ");
+ public static void Main()
+  {
+    Console.WriteLine("Digite o número para o qual deseja calcular o logaritmo: ");
         double numero = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("Digite a base do logaritmo: ");
@@ -170,7 +170,7 @@ public class Program
         {
             Console.WriteLine("Os números devem ser maiores que zero e a base não pode ser 1.");
         }
-		}
+  }
 }
 ```
 
@@ -181,23 +181,23 @@ apresentá-lo na tela.
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		Console.WriteLine("Digite o salario fixo do vendedor: ");
-		double salario = Convert.ToDouble(Console.ReadLine());
-		Console.WriteLine("Digite valor total das vendas que ele realizou no mês: ");
-		double vendas = Convert.ToDouble(Console.ReadLine());
-		Console.WriteLine("Digite o percentual que ele ganha sobre o total das vendas mensais:(Em decimal)");
-		double percent = Convert.ToDouble(Console.ReadLine());
-		
-		double total = (vendas * percent)+salario;
-		
-		Console.WriteLine("O salário final do vendedor é: "+ total);
+ public static void Main()
+ {
+  Console.WriteLine("Digite o salario fixo do vendedor: ");
+  double salario = Convert.ToDouble(Console.ReadLine());
+  Console.WriteLine("Digite valor total das vendas que ele realizou no mês: ");
+  double vendas = Convert.ToDouble(Console.ReadLine());
+  Console.WriteLine("Digite o percentual que ele ganha sobre o total das vendas mensais:(Em decimal)");
+  double percent = Convert.ToDouble(Console.ReadLine());
+  
+  double total = (vendas * percent)+salario;
+  
+  Console.WriteLine("O salário final do vendedor é: "+ total);
         
-	}
+ }
 }
 ```
 
@@ -208,12 +208,12 @@ estacionamento. O resultado deve ser apresentado na tela para o usuário.
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		Console.WriteLine("Informe o total de veículos no estacionamento: ");
+ public static void Main()
+ {
+  Console.WriteLine("Informe o total de veículos no estacionamento: ");
         int totalVeiculos = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("Informe o total de rodas no estacionamento: ");
@@ -234,7 +234,7 @@ public class Program
 
         Console.WriteLine("Há " + numeroCarros + " carros e " + numeroMotos + " motos no estacionamento.");
         
-	}
+ }
 }
 ```
 
@@ -244,12 +244,12 @@ segundos.
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		Console.WriteLine("Digite o número de segundos: ");
+ public static void Main()
+ {
+  Console.WriteLine("Digite o número de segundos: ");
         int totalSegundos = Convert.ToInt32(Console.ReadLine());
 
         int horas = totalSegundos / 3600; // 3600 segundos em uma hora
@@ -258,7 +258,7 @@ public class Program
 
         Console.WriteLine("Horas: " + horas + ", Minutos: " + minutos + ", Segundos: " + segundos);
         
-	}
+ }
 }
 ```
 
@@ -271,12 +271,12 @@ c. Média geométrica:
 
 ```csharp
 using System;
-					
+     
 public class Program
 {
-	public static void Main()
-	{
-		Console.WriteLine("Digite o primeiro valor: ");
+ public static void Main()
+ {
+  Console.WriteLine("Digite o primeiro valor: ");
         double valor1 = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("Digite o segundo valor: ");
@@ -297,6 +297,6 @@ public class Program
         Console.WriteLine("Média Aritmética: " + mediaAritmetica);
         Console.WriteLine("Média Harmônica: " + mediaHarmônica);
         Console.WriteLine("Média Geométrica: " + mediaGeometrica);
-	}
+ }
 }
 ```
